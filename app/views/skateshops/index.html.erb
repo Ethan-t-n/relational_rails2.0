@@ -1,0 +1,7 @@
+<h1> Skateshops </h1>
+<% @skateshops.each do |skateshop| %>
+  <h3><%= skateshop.name %></h3>
+  <p>location: <%= skateshop.location %></p>
+  <p>toal items in stock: <%= skateshop.total_items_in_stock %></p>
+  <p>open for the day: <%= skateshop.open_for_day %></p>
+<% end %>
